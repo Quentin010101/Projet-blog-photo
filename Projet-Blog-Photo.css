@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* --------------navbar------------------ */
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0, 0.4);
+    height: 75px;
+    width: 95%;
+    margin: 1% 2.5% 0% 2.5%;
+}
+header .logo{
+    height: 100%;
+    object-fit: contain;
+}
+header .logo img{ 
+    width: 75px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 800px;
+    height: 75px;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: 18px;
+    font-family: poppins;
+    width: 200px;
+    height: 75px;
+}
+nav a:hover{
+    background: rgba(0,0,0,0.1);
+}
+#svgBurger{
+    display: none;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    stroke: rgba(0,0,0, 0.6);
+    stroke-width: 30;
+}
+.navInvisible{
+    display: none;
+}
+
+
+@media  (max-width: 900px) {
+    #svgBurger{
+        display: flex;
+    }
+    .nav{
+        display: none;
+    }
+    .navInvisible {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: 0px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: white;
+        box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0, 0.4);
+        overflow: hidden;
+        transition: height 0.4s ease-in;
+    }
+}
+
+/* --------------navbar------------------ */
