@@ -59,6 +59,59 @@ nav a:hover{
 .navInvisible{
     display: none;
 }
+/* --------------navbar------------------ */
+
+
+
+/* ---------------footer---------------- */
+
+
+footer{
+    position: fixed;
+    bottom:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.2em -0.2em 0.5em rgba(0,0,0, 0.4);
+    height: 75px;
+    width: 95%;
+    margin: 0% 2.5% 1% 2.5%;
+}
+footer > h4 {
+    font-family: poppins;
+    color: rgb(0, 0, 0, 0.8);
+    margin-left: 15px;
+}
+.container-footer-lien {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 15px;
+    width: 500px;
+}
+.container-footer-lien > h4 {
+    font-family: poppins;
+    color: rgb(0, 0, 0, 0.8);
+    margin-right: 20px;    
+}
+.container-footer-lien a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:75px;
+    height: 75px;
+}
+.container-footer-lien a svg {
+    width: 40px;
+    height: 40px;
+    padding: 0 5px;
+    fill: rgb(0, 0, 0, 0.8);
+}
+.container-footer-lien a svg:hover {
+    fill: rgb(0, 0, 0, 0.4)
+}
+
+/* ---------------footer---------------- */
 
 
 @media  (max-width: 900px) {
@@ -83,6 +136,32 @@ nav a:hover{
         overflow: hidden;
         transition: height 0.4s ease-in;
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+    footer > h4 {
+        margin-left: 0;
+        height: 37px;
+    }
+    .container-footer-lien > h4 {
+        display: none;
+    }
+    .container-footer-lien {
+        justify-content: flex-start;
+    }
+    .container-footer-lien a {
+        height: 37px;
+        width: 37px;
+
+    }
+    .container-footer-lien a svg {
+        width: 25px;
+        height: 25px;
+        padding: 0 2px;    
+    }
 }
 
-/* --------------navbar------------------ */
