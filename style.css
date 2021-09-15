@@ -1,0 +1,304 @@
+@font-face{font-family: 'Poppins-Regular'; src: url(polices/Poppins-Regular.ttf);}
+@font-face{font-family: 'Poppins-Medium.'; src: url(polices/Poppins-Medium.ttf);}
+@font-face{font-family: 'Poppins-Bold'; src: url(polices/Poppins-Bold.ttf);}
+@font-face{font-family: 'poppins-regular'; src: url(polices/Roboto-Medium.ttf);}
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+/*--Navigation--*/
+
+.nav{
+    position: relative;
+}
+
+.nav-menu{
+    display: flex;
+    height: 70px;
+}
+
+.nav-brand{
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav .nav-brand img{
+    width: 110px;
+    position: absolute;
+    margin: 0px 15px;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 24px;
+    
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins-Regular';
+}
+
+.nav-items .nav-link a{
+    color: white;
+    
+}
+
+.nav-link{
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.nav-link:nth-child(3){
+    min-width: 160px;
+}
+
+
+/*--Navigation x--*/
+
+/*--main--*/
+
+/*--bio--*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 60px;
+    font-family: 'Poppins-Regular';
+}
+
+.biographie{ 
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 80px;
+    justify-content: center;
+    border-bottom: solid #509B97 5px;
+    border-radius: 30px;
+}
+
+.biographie .photo{
+    display: flex;
+    justify-content: center;
+}
+
+.biographie .photo1 img{
+    width: 600px;
+    border-radius: 20px;
+}
+
+.text1{
+    color: #5e5e5e;
+    height: 905px;
+    margin-left: 100px;
+}
+
+.biographie .text1 .title{
+    text-align: center;
+}
+
+.biographie .text1 .title h2{
+    color: #a09e9e;
+    margin-bottom: 40px;
+}
+
+.biographie .text1 .title h1{
+    color: #A87900;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.biographie .text1 p{
+    font-size: 30px;
+    margin: 30px;
+}
+
+/*--bio x--*/
+
+/*--expo --*/
+.expo{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+}
+
+.expo .photo2 img{
+    width: 600px;
+    border-radius: 20px;
+}
+
+.expo .text2{
+    color: #5e5e5e;
+    height: 800px;
+    margin-right: 40px;
+}
+
+.expo .text2 .title2{
+    text-align: center;
+    color: #a09e9e;
+    margin-bottom: 40px;
+}
+
+.expo .text2 p{
+    font-size: 30px;
+    margin: 30px;
+}
+
+/*--expo X--*/
+
+/*--footer--*/
+footer{
+    background-color: #509B97;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+    padding: 0px 15px;
+    font-size: 24px;
+  }
+  
+.social-network{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.social-network a{
+    color: white;
+}
+
+/*--footer x--*/
+
+/*--main x--*/
+
+@media only screen and (max-width: 700px){
+    /*--navbar--*/
+    .nav{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 290px;
+        flex-direction: column;
+        width: 200px;
+        
+    }
+
+    .nav .nav-brand img{
+        display: flex;
+        width: 150px;
+        align-items: center;
+    }
+
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+       position: relative;
+    }
+    
+    .nav-brand{
+        position: absolute;
+        position: relative;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .nav-items .nav-link{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #509B97;
+        margin: 6px 0px; 
+        padding: 5px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*--navbar x--*/
+
+    /*--main--*/
+
+    /*--bio--*/
+    .biographie{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text1{
+        height: 400px;
+        margin-left: 0px;
+    }
+    /*--bio--*/
+
+    /*--expo--*/
+    .expo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text2{
+        height: 400px;
+        margin-right: 0px;
+    }
+    /*--expo x--*/
+
+    /*--main x--*/
+    
+    /*--footer--*/
+
+    footer{
+        background-color: #509B97;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 70px;
+        padding: 15px 0px;
+        color: white;
+        font-family: 'Poppins-Regular';
+      }
+      
+    .social-network{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    /*-- footer x--*/
+}
+
+
+@media only screen and (max-width: 325px){
+    footer{
+        font-size: 20px;
+      }
+      
+}
