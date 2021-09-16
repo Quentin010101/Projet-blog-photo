@@ -72,13 +72,16 @@ footer{
     font-size: 24px;
     bottom: 0;
     position: absolute;
-    width: 97.8%;
+    width: 100%;
 }
-  
+footer h4{
+    padding-left: 15px;
+}
 .social-network{
     display: flex;
     height: 100%;
     align-items: center;
+    padding-right: 15px;
 }
 
 .social-network a{
