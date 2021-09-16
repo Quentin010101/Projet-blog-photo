@@ -70,8 +70,10 @@ footer{
     color: white;
     padding: 0px 15px;
     font-size: 24px;
-    margin-top: 4px;
-  }
+    bottom: 0;
+    position: absolute;
+    width: 97.8%;
+}
   
 .social-network{
     display: flex;
