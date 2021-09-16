@@ -92,7 +92,7 @@ a {
 }
 
 body{
-    background-image:url(/assets/nature.jpg);
+    background-image:url(./assets/nature.jpg);
     background-size: cover;
 }
 .page{
