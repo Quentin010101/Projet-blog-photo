@@ -1,3 +1,10 @@
+@font-face{font-family: 'Poppins-Regular'; src: url(polices/Poppins-Regular.ttf);}
+@font-face{font-family: 'Poppins-Medium.'; src: url(polices/Poppins-Medium.ttf);}
+@font-face{font-family: 'Poppins-Bold'; src: url(polices/Poppins-Bold.ttf);}
+@font-face{font-family: 'poppins-regular'; src: url(polices/Roboto-Medium.ttf);}
+
+
+
 *{
     margin: 0px;
     padding: 0;
@@ -68,15 +75,21 @@ footer{
     justify-content: space-between;
     height: 70px;
     color: white;
-    padding: 0px 15px;
+    padding: 15px 0px;
     font-size: 24px;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    font-family: 'Poppins-Regular';
+
 }
 footer h4{
     padding-left: 15px;
 }
+.social-network h4{
+    margin-right: 15px; 
+}
+
 .social-network{
     display: flex;
     height: 100%;
@@ -86,6 +99,7 @@ footer h4{
 
 .social-network a{
     color: white;
+    margin-right: 10px;
 }
 
 /*--footer x--*/
@@ -99,11 +113,16 @@ a {
 body{
     background-image:url(./assets/nature.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 .page{
 margin: 0;
 padding:0;
-height:100vh;
+height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .menu{
     display: flex;
@@ -131,13 +150,19 @@ height:100vh;
     color: #49A078;
     font-size: 28px;
 }
-main{
-height: 73vh;
+.body{
+height: auto;
 display:flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
 
+}
+
+@media only screen and (max-width: 1080px){ /*changement ici*/
+    .nav-link:nth-child(3){
+        min-width: 180px;
+    }
 }
 
 @media only screen and (max-width: 700px){
@@ -194,6 +219,9 @@ flex-direction: column;
 
     /*--navbar x--*/
 
+    .page{
+        height: 30vh;
+    }
     /*--footer--*/
 
     footer{
@@ -205,7 +233,6 @@ flex-direction: column;
     height: 70px;
     padding: 15px 0px;
     color: white;
-    font-family: 'Poppins-Regular';
     }
   
     .social-network{
@@ -221,4 +248,9 @@ flex-direction: column;
 }
 /*-- footer x--*/  
 
-
+@media only screen and (max-width: 380px){ 
+    footer{
+        font-size: 100%;
+    }
+      
+}
